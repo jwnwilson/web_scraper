@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-test_env="web_scrapper_venv"
+test_env="web_scraper_venv"
 if [ ! -d "$test_env" ]
 then
     virtualenv "$test_env"
@@ -23,16 +23,16 @@ fi
 if [ "$1" == "" ]
 then
     # Run tests
-    nosetests -s tests/ --cover-package=web_scrapper_module
+    nosetests -s tests/ --cover-package=web_scraper_module
 elif [ $1 == "coverage" ]
 then
     if [ ! -z "$2" ]
     then
         # Run tests
-        nosetests -s "tests/$2" --with-coverage --cover-erase --cover-html --cover-package=web_scrapper_modules
+        nosetests -s "tests/$2" --with-coverage --cover-erase --cover-html --cover-package=web_scraper_modules
     else
         # Run tests
-        nosetests -s tests/ --with-coverage --cover-erase --cover-html --cover-package=web_scrapper_modules
+        nosetests -s tests/ --with-coverage --cover-erase --cover-html --cover-package=web_scraper_modules
     fi
 else
     echo "tests/$1"

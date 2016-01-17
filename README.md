@@ -1,4 +1,4 @@
-# Simple Web Scrapper exercise
+# Simple Web scraper exercise
 
 This Application requires Python and was tested on OS X but it should also work on any linux terminal.
 If you are running on a fresh VM please run the setup.sh to install pip, venv and venvwrapper.

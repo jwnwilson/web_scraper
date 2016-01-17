@@ -15,14 +15,14 @@
     - Details page HTML size
 """
 import logging
-from web_scrapper import WebScrapper
+from web_scraper import Webscraper
 
 logger = logging.getLogger(__name__)
 
 
-class SainsburyWebscrapper(object):
+class SainsburyWebscraper(object):
     """
-    Sainsbury Webscrapper designed to pull data from the test site in the format expected.
+    Sainsbury Webscraper designed to pull data from the test site in the format expected.
     """
     def __init__(self, target_url=None, **kwargs):
         if target_url:
@@ -30,7 +30,7 @@ class SainsburyWebscrapper(object):
         else:
             self.target_url = "http://hiring-tests.s3-website-eu-west-1.amazonaws.com/2015_Developer_Scrape/5_products.html"
 
-        self.web_scrapper = WebScrapper(url=self.target_url)
+        self.web_scraper = Webscraper(url=self.target_url)
         self.load_product_links();
 
     def get_product_data(self):
@@ -76,23 +76,23 @@ class SainsburyWebscrapper(object):
         :return: list of link objects
         """
         product_links = []
-        self.web_scrapper.set_current_path("/2015_Developer_Scrape/5_products.html")
-        product_divs = self.web_scrapper.get_elements("div", class_names=["productInfo"])
+        self.web_scraper.set_current_path("/2015_Developer_Scrape/5_products.html")
+        product_divs = self.web_scraper.get_elements("div", class_names=["productInfo"])
         for product_div in product_divs:
-            child_header = self.web_scrapper.get_child_elements(product_div, "h3")[0]
-            product_link = self.web_scrapper.get_child_elements(child_header, "a")[0]
+            child_header = self.web_scraper.get_child_elements(product_div, "h3")[0]
+            product_link = self.web_scraper.get_child_elements(child_header, "a")[0]
             product_links.append(product_link)
 
         return product_links
 
     def load_product_links(self):
         """
-        Load all product links into web scrapper memeory
+        Load all product links into web scraper memeory
         :return: None
         """
         product_links = self.get_product_links()
         for link in product_links:
-            self.web_scrapper.read_site(link.get('href'))
+            self.web_scraper.read_site(link.get('href'))
         logger.info("All product links parsed into Web Scraper.")
 
     def get_product_title(self, product_path):
@@ -100,16 +100,16 @@ class SainsburyWebscrapper(object):
         Get product page title from it's parsed data
         :return: string string product url
         """
-        self.web_scrapper.set_current_path(product_path)
-        return self.web_scrapper.get_title()
+        self.web_scraper.set_current_path(product_path)
+        return self.web_scraper.get_title()
 
     def get_product_description(self, product_path):
         """
         Get product page description from it's parsed data
         :return: string string product url
         """
-        self.web_scrapper.set_current_path(product_path)
-        return self.web_scrapper.get_description()
+        self.web_scraper.set_current_path(product_path)
+        return self.web_scraper.get_description()
 
     def get_product_price_per_unit(self, product_path):
         """
@@ -117,8 +117,8 @@ class SainsburyWebscrapper(object):
         :param product_path: string product url
         :return: string price per unit value
         """
-        web_obj = self.web_scrapper.get_web_object_from_url(product_path)
-        price_unit_p = self.web_scrapper.get_child_elements(web_obj, "p", class_names=["pricePerUnit"])[0]
+        web_obj = self.web_scraper.get_web_object_from_url(product_path)
+        price_unit_p = self.web_scraper.get_child_elements(web_obj, "p", class_names=["pricePerUnit"])[0]
         return price_unit_p.find(text=True).strip()
 
     def get_product_html_size(self, product_path):
@@ -127,4 +127,4 @@ class SainsburyWebscrapper(object):
         :param product_path: string product url
         :return: string size of product_path in kb / mg
         """
-        return self.web_scrapper.get_url_page_size(product_path)
+        return self.web_scraper.get_url_page_size(product_path)

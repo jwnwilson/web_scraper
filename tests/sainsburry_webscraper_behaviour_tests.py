@@ -4,32 +4,32 @@
     @Author: Noel Wilson (jwnwilson@hotmail.co.uk)
     @Date: 17/01/2016
 
-    Sainsbury Web Scrapper unit tests
+    Sainsbury Web scraper unit tests
 """
 import os
 import sys
 import unittest
 import logging
-from web_scrapper_modules.sainsbury_webscrapper import SainsburyWebscrapper
+from web_scraper_modules.sainsbury_webscraper import SainsburyWebscraper
 
 TEST_DIR = os.path.dirname(os.path.abspath(__file__))
 logger = logging.getLogger(__name__)
 
 
-class SainsburyWebScrapperBehaviourTests(unittest.TestCase):
+class SainsburyWebscraperBehaviourTests(unittest.TestCase):
     """
     Unit tests for exercise
     """
     @classmethod
     def setUpClass(cls):
-        cls.sainWebSc = SainsburyWebscrapper()
+        cls.sainWebSc = SainsburyWebscraper()
 
-    def test_webscrapper_create(self):
+    def test_webscraper_create(self):
         """
-        Test webscrapper initializes correctly
+        Test webscraper initializes correctly
         :return: None
         """
-        self.assertEqual(self.sainWebSc.web_scrapper.get_web_object().title.string,
+        self.assertEqual(self.sainWebSc.web_scraper.get_web_object().title.string,
                          "Sainsbury's Apricot Ripe & Ready x5 | Sainsbury's")
 
     def test_load_product_links(self):
@@ -38,7 +38,7 @@ class SainsburyWebScrapperBehaviourTests(unittest.TestCase):
         :return: None
         """
         # Check all 8 pages loaded into memory
-        self.assertEqual(len(self.sainWebSc.web_scrapper.web_object), 8)
+        self.assertEqual(len(self.sainWebSc.web_scraper.web_object), 8)
 
     def test_get_product_data(self):
         """

@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bb4a36d-31b6-4b44-bbaa-76ff6ebb7883" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cover/web_scrapper_modules.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cover/web_scrapper_modules_sainsbury_webscrapper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cover/web_scrapper_modules_web_scrapper.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/sainsburry_webscrapper_behaviour_tests.py" afterPath="$PROJECT_DIR$/tests/sainsburry_webscraper_behaviour_tests.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/web_scrapper_unit_tests.py" afterPath="$PROJECT_DIR$/tests/web_scraper_unit_tests.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_scrapper_modules/__init__.py" afterPath="$PROJECT_DIR$/web_scraper_modules/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_scrapper_modules/sainsbury_webscrapper.py" afterPath="$PROJECT_DIR$/web_scraper_modules/sainsbury_webscraper.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web_scrapper_modules/web_scrapper.py" afterPath="$PROJECT_DIR$/web_scraper_modules/web_scraper.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cover/index.html" afterPath="$PROJECT_DIR$/cover/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cover/status.dat" afterPath="$PROJECT_DIR$/cover/status.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.sh" afterPath="$PROJECT_DIR$/run.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_tests.sh" afterPath="$PROJECT_DIR$/run_tests.sh" />
     </list>
     <ignored path="web_scraper.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,18 +70,18 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="run_tests.sh" pinned="false" current-in-tab="false">
+          <file leaf-file-name="run_tests.sh" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/run_tests.sh">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="2" column="27" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.043541364">
+                  <caret line="2" column="26" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="sainsbury_webscrapper.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web_scrapper_modules/sainsbury_webscrapper.py">
+          <file leaf-file-name="sainsbury_webscraper.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web_scraper_modules/sainsbury_webscraper.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
@@ -77,16 +92,36 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4090909">
-                  <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+                <state vertical-scroll-proportion="-0.0">
+                  <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
               <provider editor-type-id="MarkdownPreviewEditor">
                 <state />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/cover/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-9.541667">
+                  <caret line="68" column="51" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
+                  <folding />
+                </state>
               </provider>
             </entry>
           </file>
@@ -96,41 +131,19 @@
                 <state vertical-scroll-proportion="0.0">
                   <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
                   <folding>
-                    <element signature="e#123#137#0" expanded="true" />
+                    <element signature="e#122#136#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="web_scrapper.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web_scrapper_modules/web_scrapper.py">
+          <file leaf-file-name="web_scraper.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web_scraper_modules/web_scraper.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="88" column="20" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
                   <folding>
-                    <element signature="e#206#221#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="coverage.sh" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/coverage.sh">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="sainsburry_webscrapper_behaviour_tests.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tests/sainsburry_webscrapper_behaviour_tests.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-                  <folding>
-                    <element signature="e#166#175#0" expanded="true" />
+                    <element signature="e#205#220#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -140,13 +153,13 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="web_scrapper_unit_tests.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tests/web_scrapper_unit_tests.py">
+          <file leaf-file-name="web_scraper_unit_tests.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tests/web_scraper_unit_tests.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.37009063">
                   <caret line="117" column="69" selection-start-line="117" selection-start-column="69" selection-end-line="117" selection-end-column="69" />
                   <folding>
-                    <element signature="e#110#119#0" expanded="true" />
+                    <element signature="e#109#118#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -176,7 +189,6 @@
         <option value="$PROJECT_DIR$/tests/web_scrapper.py" />
         <option value="$PROJECT_DIR$/tests/sainsburry_webscrapper_unittests.py" />
         <option value="$PROJECT_DIR$/tests/web_scrapper_unittests.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/tests/sainsburry_webscrapper_unit_tests.py" />
         <option value="$PROJECT_DIR$/web_scrapper_modules/web_scrapper.py" />
         <option value="$PROJECT_DIR$/tests/web_scrapper_unit_tests.py" />
@@ -185,7 +197,9 @@
         <option value="$PROJECT_DIR$/tests/sainsburry_webscrapper_behaviour_tests.py" />
         <option value="$PROJECT_DIR$/web_scrapper_modules/sainsbury_webscrapper.py" />
         <option value="$PROJECT_DIR$/run.sh" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/cover/index.html" />
       </list>
     </option>
   </component>
@@ -393,11 +407,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="807" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -409,7 +424,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -448,7 +462,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_scrapper_modules/sainsbury_webscrapper.py">
+    <entry file="file://$PROJECT_DIR$/web_scraper_modules/sainsbury_webscraper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
@@ -479,37 +493,37 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
           <folding>
-            <element signature="e#123#137#0" expanded="true" />
+            <element signature="e#122#136#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_scrapper_modules/web_scrapper.py">
+    <entry file="file://$PROJECT_DIR$/web_scraper_modules/web_scraper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="97" column="16" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
           <folding>
-            <element signature="e#206#221#0" expanded="true" />
+            <element signature="e#205#220#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/sainsburry_webscrapper_behaviour_tests.py">
+    <entry file="file://$PROJECT_DIR$/tests/sainsburry_webscraper_behaviour_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="109" column="133" selection-start-line="109" selection-start-column="133" selection-end-line="109" selection-end-column="133" />
           <folding>
-            <element signature="e#166#175#0" expanded="true" />
+            <element signature="e#165#174#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/web_scrapper_unit_tests.py">
+    <entry file="file://$PROJECT_DIR$/tests/web_scraper_unit_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding>
-            <element signature="e#110#119#0" expanded="true" />
+            <element signature="e#109#118#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -535,12 +549,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="30" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="e#123#137#0" expanded="true" />
+            <element signature="e#122#136#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_scrapper_modules/sainsbury_webscrapper.py">
+    <entry file="file://$PROJECT_DIR$/web_scraper_modules/sainsbury_webscraper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
@@ -558,41 +572,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/sainsburry_webscrapper_behaviour_tests.py">
+    <entry file="file://$PROJECT_DIR$/tests/sainsburry_webscraper_behaviour_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="e#166#175#0" expanded="true" />
+            <element signature="e#165#174#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_scrapper_modules/web_scrapper.py">
+    <entry file="file://$PROJECT_DIR$/web_scraper_modules/web_scraper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="10" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#206#221#0" expanded="true" />
+            <element signature="e#205#220#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/web_scrapper_unit_tests.py">
+    <entry file="file://$PROJECT_DIR$/tests/web_scraper_unit_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#110#119#0" expanded="true" />
+            <element signature="e#109#118#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -604,12 +610,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/web_scrapper_unit_tests.py">
+    <entry file="file://$PROJECT_DIR$/tests/web_scraper_unit_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37009063">
           <caret line="117" column="69" selection-start-line="117" selection-start-column="69" selection-end-line="117" selection-end-column="69" />
           <folding>
-            <element signature="e#110#119#0" expanded="true" />
+            <element signature="e#109#118#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -622,17 +628,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/sainsburry_webscrapper_behaviour_tests.py">
+    <entry file="file://$PROJECT_DIR$/tests/sainsburry_webscraper_behaviour_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
           <folding>
-            <element signature="e#166#175#0" expanded="true" />
+            <element signature="e#165#174#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_scrapper_modules/sainsbury_webscrapper.py">
+    <entry file="file://$PROJECT_DIR$/web_scraper_modules/sainsbury_webscraper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
@@ -647,17 +653,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
           <folding>
-            <element signature="e#123#137#0" expanded="true" />
+            <element signature="e#122#136#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_scrapper_modules/web_scrapper.py">
+    <entry file="file://$PROJECT_DIR$/web_scraper_modules/web_scraper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="88" column="20" selection-start-line="88" selection-start-column="20" selection-end-line="88" selection-end-column="20" />
           <folding>
-            <element signature="e#206#221#0" expanded="true" />
+            <element signature="e#205#220#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -670,18 +676,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_tests.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/setup.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cover/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.541667">
+          <caret line="68" column="51" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -694,15 +719,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/run_tests.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4090909">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.043541364">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
   </component>

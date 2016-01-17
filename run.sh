@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-venv="web_scrapper_venv"
+venv="web_scraper_venv"
 
 # Create virtual env for app if needed
 if [ ! -d $venv ]

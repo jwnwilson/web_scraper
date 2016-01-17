@@ -2,7 +2,7 @@
     @Author: Noel Wilson
     @Date : 17/01/2016
 
-    Generic webscrapper will use requests and beautifulsoup to parse a given website then have functions to return data
+    Generic webscraper will use requests and beautifulsoup to parse a given website then have functions to return data
     from the returned object
 """
 import requests
@@ -15,9 +15,9 @@ from bs4 import BeautifulSoup
 logger = logging.getLogger(__name__)
 
 
-class WebScrapper(object):
+class Webscraper(object):
     """
-    WebScrapper designed to pull data from the test site and wrap around beautiful soup to turn data.
+    Webscraper designed to pull data from the test site and wrap around beautiful soup to turn data.
 
     Will parse multiple paths for current website to make reading of static data from multiple pages easier
     """
