@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 """
     @Author: Noel Wilson
     @Date : 17/01/2016
@@ -51,7 +53,20 @@ class SainsburyWebscrapper(object):
             "total": 3.80
         }
         """
-        pass
+        output_json = {
+            "results" : [],
+            "total" : 0
+        }
+        for link in self.get_product_links():
+            product_data = {}
+            product_data["title"] = self.get_product_title(link.get('href'))
+            product_data["description"] = self.get_product_description(link.get('href'))
+            product_data["unit_price"] = self.get_product_price_per_unit(link.get('href'))
+            product_data["size"] = self.get_product_html_size(link.get('href'))
+            output_json["results"].append(product_data)
+            output_json["total"] += float(product_data["unit_price"].replace(unicode("£",'utf-8'),""))
+
+        return output_json
 
     def get_product_links(self):
         """
@@ -59,6 +74,7 @@ class SainsburyWebscrapper(object):
         :return: list of link objects
         """
         product_links = []
+        self.web_scrapper.set_current_path("/2015_Developer_Scrape/5_products.html")
         product_divs = self.web_scrapper.get_elements("div", class_names=["productInfo"])
         for product_div in product_divs:
             child_header = self.web_scrapper.get_child_elements(product_div, "h3")[0]
@@ -73,4 +89,40 @@ class SainsburyWebscrapper(object):
         :return: None
         """
         product_links = self.get_product_links()
-        self.web_scrapper.read_site()
+        for link in product_links:
+            self.web_scrapper.read_site(link.get('href'))
+        logger.info("All product links parsed into Web Scraper.")
+
+    def get_product_title(self, product_path):
+        """
+        Get product page title from it's parsed data
+        :return: string string product url
+        """
+        self.web_scrapper.set_current_path(product_path)
+        return self.web_scrapper.get_title()
+
+    def get_product_description(self, product_path):
+        """
+        Get product page description from it's parsed data
+        :return: string string product url
+        """
+        self.web_scrapper.set_current_path(product_path)
+        return self.web_scrapper.get_description()
+
+    def get_product_price_per_unit(self, product_path):
+        """
+        Get product price per unit from it's parsed data
+        :param product_path: string product url
+        :return: string price per unit value
+        """
+        web_obj = self.web_scrapper.get_web_object_from_url(product_path)
+        price_unit_p = self.web_scrapper.get_child_elements(web_obj, "p", class_names=["pricePerUnit"])[0]
+        return price_unit_p.find(text=True).strip()
+
+    def get_product_html_size(self, product_path):
+        """
+        Return the size of the html file at the product path
+        :param product_path: string product url
+        :return: string size of product_path in kb / mg
+        """
+        return self.web_scrapper.get_url_page_size(product_path)

@@ -5,9 +5,10 @@
     Entry point for web scrapper exercise
 """
 import logging
+import json
 import logging.config
 import argparse
-from web_scrapper_modules.sainsbury_scrapper import Sainsbury_Webscrapper
+from web_scrapper_modules.sainsbury_webscrapper import SainsburyWebscrapper
 
 parser = argparse.ArgumentParser(description='Simple Web scrapper exercise.')
 parser.add_argument('-c','--command', default='default', help='Command to run on web scrapper',
@@ -31,12 +32,13 @@ def process_cmd():
     Run command line args and call the Sainsbry_Webscrapper tool to return data
     :return: None
     """
-    web_scrapper = Sainsbury_Webscrapper()
+    web_scrapper = SainsburyWebscrapper()
     logger.info("Sainsbury web scrapper initialized loaded running command: %s" % args.command)
 
     if args.command == "default":
-        json_data =web_scrapper.get_json_data()
-        print json_data
+        json_data = web_scrapper.get_product_data()
+        logger.info("Found %s products with the following data:" % len(json_data["results"]))
+        print json.dumps(json_data, indent=4, sort_keys=True)
     else:
         logger.error("Command not recognised please try again or run -h for help.")
 
