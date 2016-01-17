@@ -7,7 +7,7 @@
 import logging
 import logging.config
 import argparse
-from web_scapper.sainsbury_scrapper import Sainsbury_Webscrapper
+from web_scrapper_modules.sainsbury_scrapper import Sainsbury_Webscrapper
 
 parser = argparse.ArgumentParser(description='Simple Web scrapper exercise.')
 parser.add_argument('-c','--command', default='default', help='Command to run on web scrapper',

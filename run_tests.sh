@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-test_env="test_venv"
-# We're allowed to use external libraries for testing
+test_env="web_scrapper_venv"
 if [ ! -d "$test_env" ]
 then
     virtualenv "$test_env"
