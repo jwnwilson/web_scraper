@@ -29,7 +29,9 @@ class SainsburyWebscrapper(object):
             self.target_url = target_url
         else:
             self.target_url = "http://hiring-tests.s3-website-eu-west-1.amazonaws.com/2015_Developer_Scrape/5_products.html"
+
         self.web_scrapper = WebScrapper(url=self.target_url)
+        self.load_product_links();
 
     def get_product_data(self):
         """

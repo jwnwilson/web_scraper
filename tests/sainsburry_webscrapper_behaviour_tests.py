@@ -23,7 +23,6 @@ class SainsburyWebScrapperBehaviourTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.sainWebSc = SainsburyWebscrapper()
-        cls.sainWebSc.load_product_links();
 
     def test_webscrapper_create(self):
         """

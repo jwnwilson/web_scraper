@@ -11,10 +11,6 @@ import argparse
 from web_scrapper_modules.sainsbury_webscrapper import SainsburyWebscrapper
 
 parser = argparse.ArgumentParser(description='Simple Web scrapper exercise.')
-parser.add_argument('-c','--command', default='default', help='Command to run on web scrapper',
-                    required=True)
-parser.add_argument('-a','--args', nargs='*', help='Command arguments, please consult README for details.',
-                    required=True)
 parser.add_argument('-v','--verbose', action='store_true')
 
 args = parser.parse_args()
@@ -33,14 +29,11 @@ def process_cmd():
     :return: None
     """
     web_scrapper = SainsburyWebscrapper()
-    logger.info("Sainsbury web scrapper initialized loaded running command: %s" % args.command)
+    logger.info("Sainsbury web scrapper initialized and loaded data from SainsburyWebscrapper")
 
-    if args.command == "default":
-        json_data = web_scrapper.get_product_data()
-        logger.info("Found %s products with the following data:" % len(json_data["results"]))
-        print json.dumps(json_data, indent=4, sort_keys=True)
-    else:
-        logger.error("Command not recognised please try again or run -h for help.")
+    json_data = web_scrapper.get_product_data()
+    logger.info("Found %s products with the following data:" % len(json_data["results"]))
+    print json.dumps(json_data, indent=4, sort_keys=True)
 
 if __name__ == "__main__":
     process_cmd()

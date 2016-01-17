@@ -1,9 +1,15 @@
 #!/usr/bin/env bash
 
+venv="web_scrapper_venv"
+
 # Create virtual env for app if needed
-if [ ! -d web_scrapper ]
+if [ ! -d $venv ]
 then
-    virtualenv web_scrapper
+    virtualenv $venv
+    source ${venv}/bin/activate
+    pip install -r requirements.txt
+else
+    source ${venv}/bin/activate
 fi
-source web_scrapper/bin/activate
-python run_ex.py $@
+
+python main.py $@
